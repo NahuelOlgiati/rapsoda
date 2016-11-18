@@ -1,8 +1,18 @@
-.logo-facebook {
-  display: block;
-  width: 120px;
-  height: 31px;
-  background-image: url('caca.png');
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.service-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 90px;
+    width: 80px;
+}
+
+.icon-camera {
+  background-image: url('../../img/icons/camera.png');
+}
+
+.icon-video {
+  background-image: url('../../img/icons/video.png');
+}
+
+.icon-premiere {
+  background-image: url('../../img/icons/premiere.png');
 }
