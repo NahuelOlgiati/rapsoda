@@ -16,3 +16,14 @@
 .icon-premiere {
   background-image: url('../../img/icons/premiere.png');
 }
+
+.contact-section {
+  background-image: url('../..//img/creative/bg-contact.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-section {
+  background-color: #222 !important;
+}
