@@ -1,3 +1,22 @@
+/* Override Propose */
+input, select, textarea{
+    color: #222 !important;
+    font-size: 1.7em !important;
+}
+
+input, select{
+    height: 45px !important;
+}
+
+.footer-section {
+  background-color: #222 !important;
+}
+
+.help-block {
+  color: #222 !important;
+}
+
+/* Custom Classes */
 .service-icon {
     background-repeat: no-repeat;
     display: inline-block;
@@ -22,8 +41,4 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.footer-section {
-  background-color: #222 !important;
 }
