@@ -86,8 +86,10 @@
     // Portfolio parameters
     $('.portfolio').bind('click', function (event) {
         var title = $(this).data('title');
+        var category = $(this).data('category');
         var videoid = $(this).data('videoid');
         $('#portfolioVideoTitle').text(title);
+        $('#portfolioVideoCategory').text(category);
         $('#portfolioVideoIframe').attr('src', 'https://www.youtube.com/embed/'+videoid);
     });
 
@@ -162,7 +164,11 @@ $(document).ready(function () {
 
     // Portfolio thumbnail
     $('#portfoliolist .portfolio').each(function (i, val) {
+        var title = $(val).data('title');
+        var category = $(val).data('category');
         var videoid = $(val).data('videoid');
+        $(val).find(".text-title").text(title);
+        $(val).find(".text-category").text(category);
         $(val).find(".portfolio-thumbnail").attr('src', 'http://img.youtube.com/vi/'+videoid+'/0.jpg');
     });
 });
