@@ -1,9 +1,3 @@
-/*!
- * Vitality v1.3.5 (http://themes.startbootstrap.com/vitality-v1.3.5)
- * Copyright 2013-2015 Start Bootstrap Themes
- * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
- */
-
 (function ($) {
     "use strict"; // Start of use strict
 
@@ -80,14 +74,6 @@
         },
         image: {
             titleSrc: 'title'
-        }
-    });
-
-    // Formstone Background - Video Background Settings
-    $("header.video").background({
-        source: {
-            poster: "assets/img/bg-mobile-fallback.jpg",
-            mp4: "assets/mp4/camera.mp4"
         }
     });
 
