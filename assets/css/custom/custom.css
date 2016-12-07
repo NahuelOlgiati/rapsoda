@@ -1,6 +1,6 @@
 /* Override Propose */
 input, select, textarea{
-    color: #222 !important;
+    color: white !important;
     font-size: 1.7em !important;
 }
 
@@ -13,7 +13,15 @@ input, select{
 }
 
 .help-block {
-  color: #222 !important;
+  color: #e1e1e1;
+}
+
+.floating-label-form-group label {
+  color: white !important;
+}
+
+.floating-label-form-group-with-focus label {
+  color: #38e6d8 !important;
 }
 
 /* Custom Classes */
@@ -52,8 +60,7 @@ input, select{
   background-size: cover;
   background-repeat: no-repeat;
   display: block;
-  width: 1200px;
-  height: 800px;
+  height: 100%;
 
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
@@ -69,4 +76,20 @@ input, select{
   z-index: 9999;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.btn-outline-custom {
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.btn-outline-custom:hover,
+.btn-outline-dark:focus {
+  color: white;
+  background: #38e6d8;
+  border-color: #38e6d8;
+  outline: none;
 }
