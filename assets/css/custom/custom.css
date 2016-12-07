@@ -37,8 +37,36 @@ input, select{
 }
 
 .contact-section {
-  background-image: url('../..//img/creative/bg-contact.jpg');
+  background-image: url('../../img/creative/bg-contact.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.modal-background.video {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 1200px;
+  height: 800px;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.modal-content.video {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
 }

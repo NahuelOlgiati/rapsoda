@@ -88,14 +88,16 @@
         var title = $(this).data('title');
         var category = $(this).data('category');
         var videoid = $(this).data('videoid');
+        var background = "url('http://img.youtube.com/vi/" + videoid + "/0.jpg')";
         $('#portfolioVideoTitle').text(title);
         $('#portfolioVideoCategory').text(category);
-        $('#portfolioVideoIframe').attr('src', 'https://www.youtube.com/embed/'+videoid);
+        $('#portfolioVideoIframe').attr('src', 'https://www.youtube.com/embed/' + videoid + '?autoplay=1&showinfo=0');
+        $('#portfolioVideoBackground').attr('style', 'background-image: ' + background);
     });
 
     // Portfolio Close
     $('#portfolioVideoClose').bind('click', function (event) {
-        var url = $('#portfolioVideoIframe').attr('src');
+        var url = $('#portfolioVideoIframe').attr('src').replace("autoplay=1", "autoplay=0");
         $('#portfolioVideoIframe').attr('src', '');
         $('#portfolioVideoIframe').attr('src', url);
     });
@@ -169,6 +171,6 @@ $(document).ready(function () {
         var videoid = $(val).data('videoid');
         $(val).find(".text-title").text(title);
         $(val).find(".text-category").text(category);
-        $(val).find(".portfolio-thumbnail").attr('src', 'http://img.youtube.com/vi/'+videoid+'/0.jpg');
+        $(val).find(".portfolio-thumbnail").attr('src', 'http://img.youtube.com/vi/' + videoid + '/0.jpg');
     });
 });
