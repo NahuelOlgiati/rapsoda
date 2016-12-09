@@ -104,8 +104,14 @@ input, select{
   outline: none;
 }
 
-@media (min-width: 992px) {
-  .img-responsive.about {
-    margin-top: 20%;
+@media (min-width: 768px) {
+  .row-flex-middle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
   }
 }
