@@ -61,24 +61,6 @@ input, select{
     height: 100%;
 }
 
-.modal-background.video {
-  position: fixed;
-  left: 0;
-  right: 0;
-  z-index: 1;
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-  height: 100%;
-
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-}
-
 .modal-content.video {
   position: fixed;
   left: 0;

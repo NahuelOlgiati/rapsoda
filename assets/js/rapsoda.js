@@ -88,11 +88,9 @@
         var title = $(this).data('title');
         var category = $(this).data('category');
         var videoid = $(this).data('videoid');
-        var background = "url('http://img.youtube.com/vi/" + videoid + "/0.jpg')";
         $('#portfolioVideoTitle').text(title);
         $('#portfolioVideoCategory').text(category);
         $('#portfolioVideoIframe').attr('src', 'https://www.youtube.com/embed/' + videoid + '?autoplay=1&showinfo=0');
-        $('#portfolioVideoBackground').attr('style', 'background-image: ' + background);
     });
 
     // Portfolio Close
